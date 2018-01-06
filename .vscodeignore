@@ -1,0 +1,6 @@
+.gitignore
+LICENSE
+CHANGELOG.md
+.DS_Store
+*/.DS_Store
+test.js

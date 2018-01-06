@@ -1,0 +1,97 @@
+{
+  // Import
+  "Normal Import": {
+    "prefix": "im",
+    "body": "import $1 from '$2'\n"
+  },
+  "Object Import": {
+    "prefix": "imo",
+    "body": "import { $2 } from '$1'\n"
+  },
+  "Component Import": {
+    "prefix": "imc",
+    "body": "import ${1:componentName} from '@/components/${1:componentName}'\n"
+  },
+  "React Import": {
+    "prefix": "imr",
+    "body": "import React, { Component } from 'react'\n"
+  },
+  "Connect Redux": {
+    "prefix": "imcon",
+    "body": "import { connect } from 'react-redux'\n"
+  },
+
+  // Component
+  "React Normal Component": {
+    "prefix": "rc",
+    "body": "import React, { Component } from 'react'\n\nexport default class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n"
+  },
+  "React Component With Methods": {
+    "prefix": "rcf",
+    "body": "import React, { Component } from 'react'\n\nexport default class ${1:componentName} extends Component {\n\tconstructor(props) {\n\t\tsuper(props)\n\n\t}\n\n\tcomponentWillMount() {\n\n\t}\n\n\tcomponentDidMount() {\n\n\t}\n\n\tcomponentWillReceiveProps(nextProps) {\n\n\t}\n\n\tshouldComponentUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentWillUpdate(nextProps, nextState) {\n\n\t}\n\n\tcomponentDidUpdate(prevProps, prevState) {\n\n\t}\n\n\tcomponentWillUnmount() {\n\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\n\t\t\t</div>\n\t\t)\n\t}\n}"
+  },
+  "React Component State Less": {
+    "prefix": "rcl",
+    "body": "import React from 'react'\n\nexport default function ${1:componentName}(props) {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t)\n}"
+  },
+
+  // Component Method
+  "componentWillMount": {
+    "prefix": "cwm",
+    "body": "\ncomponentWillMount() {\n\t$0\n}\n"
+  },
+  "componentDidMount": {
+    "prefix": "cdm",
+    "body": "\ncomponentDidMount() {\n\t$0\n}\n"
+  },
+  "componentWillReceiveProps": {
+    "prefix": "cwr",
+    "body": "\ncomponentWillReceiveProps(nextProps) {\n\t$0\n}\n"
+  },
+  "shouldComponentUpdate": {
+    "prefix": "scu",
+    "body": "\nshouldComponentUpdate(nextProps, nextState) {\n\t$0\n}\n"
+  },
+  "componentWillUpdate": {
+    "prefix": "cwu",
+    "body": "\ncomponentWillUpdate(nextProps, nextState) {\n\t$0\n}\n"
+  },
+  "componentDidUpdate": {
+    "prefix": "cdu",
+    "body": "\ncomponentDidUpdate(prevProps, prevState) {\n\t$0\n}\n"
+  },
+  "componentWillUnmount": {
+    "prefix": "cwun",
+    "body": "\ncomponentWillUnmount() {\n\t$0\n}\n"
+  },
+  "componentRender": {
+    "prefix": "ren",
+    "body": "\nrender() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}"
+  },
+  "componentSetState": {
+    "prefix": "ss",
+    "body": "this.setState({ $0 })\n"
+  },
+  "componentSetStateFunc": {
+    "prefix": "ssf",
+    "body": "this.setState((prevState, props) => ({ $0 })\n"
+  },
+  "bindThis": {
+    "prefix": "bnd",
+    "body": "this::this.${0:handleFunctionName}"
+  },
+
+  // Redux
+  "connect": {
+    "prefix": "connect",
+    "body": "@connect(({ $1 }) => ({ $2 }))"
+  },
+
+  // other
+  "log": {
+    "prefix": "log",
+    "body": [
+      "\nconsole.log('$0 ===========================>', $1)\n"
+    ]
+  }
+}
