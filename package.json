@@ -1,14 +1,14 @@
 {
     "name": "zewail-react-snippets",
     "description": "For zewail-react env",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "displayName": "Zewail-React Snippets",
     "publisher": "zewail",
     "icon": "images/logo.png",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/discountry/vscode-react-redux-react-router-snippets"
+        "url": "https://github.com/czewail/zewail-react-snippets-to-vscode"
     },
     "engines": {
         "vscode": "0.10.x"
