@@ -13,17 +13,19 @@
 
 | 关键字   | 内容                                       |
 | ----- | ---------------------------------------- |
-| im    | import $1 from '$2'                      |
+| ims   | import $1 from '$2'                      |
 | imo   | import { $2 } from '$1'                  |
-| imc   | import ${1:componentName} from '@/components/${1:componentName}' |
+| imcp  | import ${1:componentName} from '@/components/${1:componentName}' |
 | imr   | import React, { Component } from 'react' |
 | imcon | import { connect } from 'react-redux'    |
+| imct  | import ${1:ContainerName} from '@/components/${1:ContainerName}' |
+| imcls | import ClassNames from 'classnames'      |
 
 ### react
 
 | 关键字  | 内容                 |
 | ---- | ------------------ |
-| rc   | Class组件            |
+| rcc  | Class组件            |
 | rcf  | 包含所有生命周期方法的Class组件 |
 | rcl  | 函数式组件              |
 

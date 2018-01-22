@@ -1,20 +1,28 @@
 {
   // Import
   "Normal Import": {
-    "prefix": "im",
-    "body": "import $1 from '$2'\n"
+    "prefix": "ims",
+    "body": "import ${2:packageName} from '$1'\n"
   },
   "Object Import": {
     "prefix": "imo",
     "body": "import { $2 } from '$1'\n"
   },
   "Component Import": {
-    "prefix": "imc",
+    "prefix": "imcp",
     "body": "import ${1:componentName} from '@/components/${1:componentName}'\n"
+  },
+  "Container Import": {
+    "prefix": "imct",
+    "body": "import ${1:ContainerName} from '@/components/${1:ContainerName}'\n"
   },
   "React Import": {
     "prefix": "imr",
     "body": "import React, { Component } from 'react'\n"
+  },
+  "ClassNames Import": {
+    "prefix": "imcls",
+    "body": "import ClassNames from 'classnames'\n"
   },
   "Connect Redux": {
     "prefix": "imcon",
@@ -23,7 +31,7 @@
 
   // Component
   "React Normal Component": {
-    "prefix": "rc",
+    "prefix": "rcc",
     "body": "import React, { Component } from 'react'\n\nexport default class ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n"
   },
   "React Component With Methods": {
@@ -91,7 +99,7 @@
   "log": {
     "prefix": "log",
     "body": [
-      "\nconsole.log('$0 ===========================>', $1)\n"
+      "\nconsole.log('$1 ===========================>', $2)\n"
     ]
   }
 }
