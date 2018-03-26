@@ -2,31 +2,31 @@
   // Import
   "Normal Import": {
     "prefix": "ims",
-    "body": "import ${2:packageName} from '$1'\n"
+    "body": "import ${2:packageName} from '$1'"
   },
   "Object Import": {
     "prefix": "imo",
-    "body": "import { $2 } from '$1'\n"
+    "body": "import { $2 } from '$1'"
   },
   "Component Import": {
     "prefix": "imcp",
-    "body": "import ${1:componentName} from '@/components/${1:componentName}'\n"
+    "body": "import ${1:componentName} from '@/components/${1:componentName}'"
   },
   "Container Import": {
     "prefix": "imct",
-    "body": "import ${1:ContainerName} from '@/components/${1:ContainerName}'\n"
+    "body": "import ${1:ContainerName} from '@/components/${1:ContainerName}'"
   },
   "React Import": {
     "prefix": "imr",
-    "body": "import React, { Component } from 'react'\n"
+    "body": "import React, { Component } from 'react'"
   },
   "ClassNames Import": {
     "prefix": "imcls",
-    "body": "import ClassNames from 'classnames'\n"
+    "body": "import classNames from 'classnames'"
   },
   "Connect Redux": {
     "prefix": "imcon",
-    "body": "import { connect } from 'react-redux'\n"
+    "body": "import { connect } from 'react-redux'"
   },
 
   // Component
@@ -86,7 +86,7 @@
   },
   "bindThis": {
     "prefix": "bnd",
-    "body": "this::this.${0:handleFunctionName}"
+    "body": "this.${0:handleFunctionName}.bind(this)"
   },
 
   // Redux
@@ -96,10 +96,10 @@
   },
 
   // other
-  "log": {
-    "prefix": "log",
+  "arrow log": {
+    "prefix": "alog",
     "body": [
-      "\nconsole.log('$1 ===========================>', $2)\n"
+      "\nconsole.log('$1 ===>', $2)\n"
     ]
   }
 }
